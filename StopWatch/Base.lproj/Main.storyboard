@@ -69,19 +69,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count 10 sec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxI-Ca-PUt">
+                                <rect key="frame" x="80" y="123" width="254" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <color key="textColor" red="0.68642979449999997" green="0.15576840750000001" blue="0.55749678940000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lxI-Ca-PUt" secondAttribute="trailing" constant="80" id="4q5-ne-JTj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KwK-jg-o4T" secondAttribute="trailing" constant="80" id="IO8-yr-eBE"/>
                             <constraint firstItem="Ppj-ll-0fX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="LjV-iF-WRH"/>
                             <constraint firstItem="KwK-jg-o4T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ahl-ER-3Xr"/>
                             <constraint firstItem="KwK-jg-o4T" firstAttribute="top" secondItem="Ppj-ll-0fX" secondAttribute="bottom" constant="150" id="c4q-nY-WmA"/>
+                            <constraint firstItem="Ppj-ll-0fX" firstAttribute="top" secondItem="lxI-Ca-PUt" secondAttribute="bottom" constant="30" id="d2g-sw-RSV"/>
+                            <constraint firstItem="lxI-Ca-PUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8p-y2-TWK"/>
+                            <constraint firstItem="lxI-Ca-PUt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="k6k-vJ-e3g"/>
                             <constraint firstItem="Ppj-ll-0fX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="rqF-CT-G7e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ppj-ll-0fX" secondAttribute="trailing" constant="80" id="xju-qK-o5f"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="judgeLabel" destination="lxI-Ca-PUt" id="Up2-s6-hHK"/>
                         <outlet property="label" destination="Ppj-ll-0fX" id="Tac-nV-sfh"/>
                     </connections>
                 </viewController>
